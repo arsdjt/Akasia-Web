@@ -358,10 +358,11 @@ const App = () => {
 
       {/* Industries Slider/Grid */}
       <section className="py-40 bg-slate-50 border-y border-slate-100 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
-          <Logo className="w-full h-full" color={mainColor} />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="relative">
+          <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
+            <Logo className="w-full h-full" color={mainColor} />
+          </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-32">
             <Reveal width="100%">
               <h2 className="text-4xl md:text-7xl font-black text-slate-900 mb-8 uppercase tracking-tighter">Strategic Impact</h2>
@@ -477,6 +478,7 @@ const App = () => {
                 </div>
               </Reveal>
             ))}
+          </div>
           </div>
         </div>
       </section>
@@ -610,6 +612,7 @@ const App = () => {
           0% { opacity: 0; transform: translateY(40px); }
           100% { opacity: 1; transform: translateY(0); }
         }
+      `}</style>
     </div>
     </>
   )
