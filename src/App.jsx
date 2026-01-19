@@ -177,8 +177,7 @@ const App = () => {
   ]
 
   return (
-    <>
-      <div className="min-h-screen bg-white text-slate-900 scroll-smooth selection:bg-green-100 selection:text-green-900" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+    <div className="min-h-screen bg-white text-slate-900 scroll-smooth selection:bg-green-100 selection:text-green-900" style={{ fontFamily: "'Montserrat', sans-serif" }}>
       {/* Back to Top */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -261,11 +260,11 @@ const App = () => {
             </Reveal>
             
             <h1 className="text-5xl md:text-8xl font-black text-white leading-[1] mb-10 tracking-tighter opacity-0 translate-y-10 animate-[slideUp_1s_ease-out_0.2s_forwards]">
-              MINING & SMELTER <span className="text-black/30">INDUSTRIAL</span> CONSUMABLES IN INDONESIA
+              Mining & Smelter <span className="text-black/30">Industrial</span> Consumables in Indonesia
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-14 leading-relaxed max-w-2xl font-medium opacity-0 translate-y-10 animate-[slideUp_1s_ease-out_0.4s_forwards]">
-              Reliable non-chemical industrial consumables supporting mining operations, smelter facilities, and heavy equipment maintenance with consistent supply and responsive service
+              Reliable non-chemical industrial consumables supporting mining operations, smelter facilities, and heavy equipment maintenance with consistent supply and responsive service.
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-8 opacity-0 translate-y-10 animate-[slideUp_1s_ease-out_0.6s_forwards]">
@@ -316,7 +315,6 @@ const App = () => {
                 <div className="space-y-8 text-slate-600 text-xl leading-relaxed font-medium">
                   <p className="border-l-4 pl-8 border-green-100">
                     <span className="font-black text-slate-900">PT Akal Karya Indonesia</span> is an Indonesia-based industrial trading and supply company specializing in non-chemical consumables for mining, smelter, and heavy equipment industries.
-
                   </p>
                   <p className="pl-8">
                     We support operational reliability by supplying products required for maintenance, repair, and daily operations, helping our clients maintain productivity, safety, and equipment performance.
@@ -325,16 +323,6 @@ const App = () => {
                 
                 <div className="pt-12 grid grid-cols-1 sm:grid-cols-2 gap-10">
                   {[
-                    "Maintenance & Repair",
-                    "Daily Operations Support",
-                    "Equipment Performance",
-                    "Site Safety Standards"
-                  ].map((item, i) => (
-                    <Reveal key={i} delay={0.1 * i}>
-                      <div className="group flex items-center space-x-5 p-6 rounded-3xl transition-all duration-300 hover:bg-slate-50 hover:shadow-xl hover:-translate-y-2">
-                        <div className="w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:bg-[#66b879] group-hover:text-white group-hover:rotate-12" style={{ backgroundColor: mainColor + '15', color: mainColor }}>
-                          <CheckCircle2 size={24} />
-                        </div>
                     "Maintenance & Repair",
                     "Daily Operations Support",
                     "Equipment Performance",
@@ -358,11 +346,10 @@ const App = () => {
 
       {/* Industries Slider/Grid */}
       <section className="py-40 bg-slate-50 border-y border-slate-100 relative overflow-hidden">
-        <div className="relative">
-          <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
-            <Logo className="w-full h-full" color={mainColor} />
-          </div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
+          <Logo className="w-full h-full" color={mainColor} />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-32">
             <Reveal width="100%">
               <h2 className="text-4xl md:text-7xl font-black text-slate-900 mb-8 uppercase tracking-tighter">Strategic Impact</h2>
@@ -391,7 +378,7 @@ const App = () => {
           <div className="mb-32 flex flex-col md:flex-row md:items-end justify-between gap-12">
             <Reveal>
               <span className="text-[12px] font-black uppercase tracking-[0.6em] block mb-6" style={{ color: mainColor }}>PRODUCT ECOSYSTEM</span>
-              <h2 className="text-5xl md:text-8xl font-black text-slate-900 tracking-tighter leading-[0.9]">Comprehensive Products for Mining & Smelter Operations<br/>for Mining & Smelter Operations</h2>
+              <h2 className="text-5xl md:text-8xl font-black text-slate-900 tracking-tighter leading-[0.9]">Industrial<br/>Intelligence</h2>
             </Reveal>
             <Reveal>
               <a href="#contact" className="group flex items-center font-black text-slate-400 hover:text-slate-900 transition-all text-sm uppercase tracking-widest pb-2 border-b-2 border-slate-100 hover:border-slate-900">
@@ -478,7 +465,6 @@ const App = () => {
                 </div>
               </Reveal>
             ))}
-          </div>
           </div>
         </div>
       </section>
@@ -614,7 +600,6 @@ const App = () => {
         }
       `}</style>
     </div>
-    </>
   )
 }
 
