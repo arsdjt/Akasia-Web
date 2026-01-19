@@ -177,7 +177,8 @@ const App = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 scroll-smooth selection:bg-green-100 selection:text-green-900" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+    <>
+      <div className="min-h-screen bg-white text-slate-900 scroll-smooth selection:bg-green-100 selection:text-green-900" style={{ fontFamily: "'Montserrat', sans-serif" }}>
       {/* Back to Top */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -254,17 +255,17 @@ const App = () => {
               <div className="inline-flex items-center px-5 py-2.5 bg-white/15 backdrop-blur-xl rounded-2xl mb-10 border border-white/20 shadow-2xl">
                 <div className="w-2 h-2 rounded-full bg-white animate-pulse mr-3"></div>
                 <span className="text-white text-[11px] font-black uppercase tracking-[0.4em]">
-                  INDUSTRIAL EXCELLENCE 2024
+                  INDUSTRIAL SOLUTION
                 </span>
               </div>
             </Reveal>
             
             <h1 className="text-5xl md:text-8xl font-black text-white leading-[1] mb-10 tracking-tighter opacity-0 translate-y-10 animate-[slideUp_1s_ease-out_0.2s_forwards]">
-              Powering <span className="text-black/30">Heavy</span> Industry Sourcing
+              MINING & SMELTER <span className="text-black/30">INDUSTRIAL</span> CONSUMABLES IN INDONESIA
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-14 leading-relaxed max-w-2xl font-medium opacity-0 translate-y-10 animate-[slideUp_1s_ease-out_0.4s_forwards]">
-              Strategic consumables supplier specializing in mining operations, smelter facilities, and equipment maintenance across Indonesia.
+              Reliable non-chemical industrial consumables supporting mining operations, smelter facilities, and heavy equipment maintenance with consistent supply and responsive service
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-8 opacity-0 translate-y-10 animate-[slideUp_1s_ease-out_0.6s_forwards]">
@@ -282,14 +283,6 @@ const App = () => {
                 OUR SOLUTIONS
               </a>
             </div>
-          </div>
-        </div>
-
-        {/* Scroll Visual */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-4">
-          <span className="text-[10px] font-black text-white/40 tracking-[0.5em] uppercase">Scroll</span>
-          <div className="w-[2px] h-16 bg-gradient-to-b from-white/60 to-transparent rounded-full relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1/2 bg-white animate-[scroll_2.5s_infinite_cubic-bezier(0.76,0,0.24,1)]"></div>
           </div>
         </div>
       </section>
@@ -319,18 +312,29 @@ const App = () => {
                   <div className="w-16 h-2 rounded-full" style={{ backgroundColor: mainColor }}></div>
                   <span className="text-[12px] font-black uppercase tracking-[0.5em]" style={{ color: mainColor }}>CORPORATE PROFILE</span>
                 </div>
-                <h2 className="text-4xl md:text-6xl font-black mb-12 text-slate-900 leading-[1.1] tracking-tighter">Integrated Industrial Solutions</h2>
+                <h2 className="text-4xl md:text-6xl font-black mb-12 text-slate-900 leading-[1.1] tracking-tighter">Trusted Industrial Consumables Partner for Mining & Heavy Industries</h2>
                 <div className="space-y-8 text-slate-600 text-xl leading-relaxed font-medium">
                   <p className="border-l-4 pl-8 border-green-100">
-                    <span className="font-black text-slate-900">PT Akal Karya Indonesia</span> is a strategic supply chain company focusing on the highest standards of non-chemical consumables.
+                    <span className="font-black text-slate-900">PT Akal Karya Indonesia</span> is an Indonesia-based industrial trading and supply company specializing in non-chemical consumables for mining, smelter, and heavy equipment industries.
+
                   </p>
                   <p className="pl-8">
-                    We bridge the gap between quality manufacturing and field execution, ensuring your heavy equipment remains operational in the most demanding environments.
+                    We support operational reliability by supplying products required for maintenance, repair, and daily operations, helping our clients maintain productivity, safety, and equipment performance.
                   </p>
                 </div>
                 
                 <div className="pt-12 grid grid-cols-1 sm:grid-cols-2 gap-10">
                   {[
+                    "Maintenance & Repair",
+                    "Daily Operations Support",
+                    "Equipment Performance",
+                    "Site Safety Standards"
+                  ].map((item, i) => (
+                    <Reveal key={i} delay={0.1 * i}>
+                      <div className="group flex items-center space-x-5 p-6 rounded-3xl transition-all duration-300 hover:bg-slate-50 hover:shadow-xl hover:-translate-y-2">
+                        <div className="w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:bg-[#66b879] group-hover:text-white group-hover:rotate-12" style={{ backgroundColor: mainColor + '15', color: mainColor }}>
+                          <CheckCircle2 size={24} />
+                        </div>
                     "Maintenance & Repair",
                     "Daily Operations Support",
                     "Equipment Performance",
@@ -386,7 +390,7 @@ const App = () => {
           <div className="mb-32 flex flex-col md:flex-row md:items-end justify-between gap-12">
             <Reveal>
               <span className="text-[12px] font-black uppercase tracking-[0.6em] block mb-6" style={{ color: mainColor }}>PRODUCT ECOSYSTEM</span>
-              <h2 className="text-5xl md:text-8xl font-black text-slate-900 tracking-tighter leading-[0.9]">Industrial<br/>Intelligence</h2>
+              <h2 className="text-5xl md:text-8xl font-black text-slate-900 tracking-tighter leading-[0.9]">Comprehensive Products for Mining & Smelter Operations<br/>for Mining & Smelter Operations</h2>
             </Reveal>
             <Reveal>
               <a href="#contact" className="group flex items-center font-black text-slate-400 hover:text-slate-900 transition-all text-sm uppercase tracking-widest pb-2 border-b-2 border-slate-100 hover:border-slate-900">
@@ -449,7 +453,7 @@ const App = () => {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-32 gap-12">
             <div className="max-w-3xl">
               <Reveal>
-                <h2 className="text-5xl md:text-8xl font-black mb-10 tracking-tighter leading-[0.9]">Why Akal Karya</h2>
+                <h2 className="text-5xl md:text-8xl font-black mb-10 tracking-tighter leading-[0.9]">Why Choose Us</h2>
                 <p className="text-slate-400 text-2xl font-bold tracking-tight">The benchmark for industrial supply reliability.</p>
               </Reveal>
             </div>
@@ -606,8 +610,8 @@ const App = () => {
           0% { opacity: 0; transform: translateY(40px); }
           100% { opacity: 1; transform: translateY(0); }
         }
-      `}</style>
     </div>
+    </>
   )
 }
 
