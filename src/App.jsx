@@ -21,6 +21,7 @@ import {
   ArrowRight,
   ArrowUp
 } from 'lucide-react'
+import { fluidFontSize } from './utils/responsive'
 
 // Custom Logo Component - Professional SVG representing Akasia (Leaf) + Industrial (A-frame)
 const Logo = ({ className = 'w-10 h-10', color = '#66b879' }) => (
@@ -259,7 +260,7 @@ const App = () => {
               </div>
             </Reveal>
             
-            <h1 className="text-5xl md:text-8xl font-black text-white leading-[1] mb-10 tracking-tighter opacity-0 translate-y-10 animate-[slideUp_1s_ease-out_0.2s_forwards]">
+            <h1 className="font-black text-white leading-[1] mb-10 tracking-tighter opacity-0 translate-y-10 animate-[slideUp_1s_ease-out_0.2s_forwards]" style={{ fontSize: fluidFontSize(40, 80) }}>
               Mining & Smelter <span className="text-black/30">Industrial</span> Consumables in Indonesia
             </h1>
             
@@ -524,7 +525,7 @@ const App = () => {
                       <label className="absolute left-0 top-5 text-slate-400 font-black text-xs uppercase tracking-[0.3em] transition-all peer-focus:-translate-y-12 peer-focus:text-[#66b879] peer-[:not(:placeholder-shown)]:-translate-y-12 peer-[:not(:placeholder-shown)]:text-[#66b879]">Requirement Brief</label>
                     </div>
                     <button className="group w-full text-white font-black py-8 rounded-3xl transition-all duration-500 shadow-[0_30px_60px_rgba(102,184,121,0.4)] tracking-[0.5em] text-sm hover:scale-[1.03] active:scale-[0.97] flex items-center justify-center space-x-6" style={{ backgroundColor: mainColor }}>
-                      <span>SEND TRANSMISSION</span>
+                      <span>SUBMIT</span>
                       <ArrowRight className="group-hover:translate-x-3 transition-transform" />
                     </button>
                   </form>
