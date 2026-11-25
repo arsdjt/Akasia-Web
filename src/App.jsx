@@ -483,7 +483,7 @@ const App = () => {
               <div className="space-y-16 mt-20">
                 {[
                   { icon: <MapPin size={28} style={{ color: mainColor }} />, label: "Headquarters", val: "Palma Tower, Floor 18 Unit D1, South Jakarta, 12310" },
-                  { icon: <Mail size={28} style={{ color: mainColor }} />, label: "Corporate Inquiry", val: "arya@akasia.id", link: "mailto:arya@akasia.id" },
+                  { icon: <Mail size={28} style={{ color: mainColor }} />, label: "Corporate Inquiry", val: "tama@akasia.id", link: "mailto:tama@akasia.id" },
                   { icon: <MessageCircle size={28} className="text-green-600" />, label: "WhatsApp Official", val: "+62 851-7226-7530", link: "https://wa.me/6285172267530" }
                 ].map((item, i) => (
                   <Reveal key={i} delay={0.2 + (i * 0.1)}>
